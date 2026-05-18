@@ -17,7 +17,7 @@ jobs:
        uses: actions/checkout@v6.0.2
        with:
          repository: mikhailtchesnokov/NodeJsLabs
-         path: /node-js-labs
+         path: ./node-js-labs
 
      - name: Show runner info
        run: |
