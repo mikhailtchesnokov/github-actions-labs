@@ -37,7 +37,7 @@ jobs:
         echo "Custom host name: $CUSTOM_HOSTNAME"
      - name: Printint repository secret
        env:
-         MY_API_KEY: ${secrets.API_KEY}
+         MY_API_KEY: ${{secrets.API_KEY}}
        run: |
          echo "API_KEY is $API_KEY"
    
