@@ -26,6 +26,8 @@ jobs:
          ls -la
          
   second:
+   needs:
+     - first
    runs-on: ubuntu-latest
    env:
      CUSTOM_HOSTNAME: "custom_host"
