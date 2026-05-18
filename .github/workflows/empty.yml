@@ -28,5 +28,6 @@ jobs:
      CUSTOM_HOSTNAME: "custom_host"
    steps:
      - name: Printing custom host name
-       run: echo "Custom host name: $CUSTOM_HOSTNAME"
+       run: |
+        echo "Custom host name: $CUSTOM_HOSTNAME"
    
