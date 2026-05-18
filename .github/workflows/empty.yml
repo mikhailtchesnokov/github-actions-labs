@@ -23,7 +23,9 @@ jobs:
          ls -la
   second:
    runs-on: ubuntu-latest
+   env:
+     CUSTOM_HOSTNAME: "custom_host"
    steps:
-     - name: Second job message
-       run: echo 'This job runs after first job'
+     - name: Printing custom host name
+       run: echo "Custom host name: $CUSTOM_HOSTNAME"
    
