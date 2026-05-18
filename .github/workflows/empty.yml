@@ -1,0 +1,21 @@
+name: Hello worl github actions
+
+on: 
+ workflow_dispatch: 
+
+jobs:
+  hello: 
+   runs-on: ubuntu-latest
+   steps:
+     - name: Checkout repository
+       uses: actions/checkout@v6.0.2
+
+     - name: Say hello
+       run: echo "Hello from GitHub actions"
+
+     - name: Show runner info
+       run: |
+         uname -a 
+         pwd
+         ls -la
+    
