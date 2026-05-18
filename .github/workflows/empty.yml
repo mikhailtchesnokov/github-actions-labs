@@ -7,7 +7,7 @@ on:
      - main
 
 jobs:
-  hello: 
+  first: 
    runs-on: ubuntu-latest
    steps:
      - name: Checkout repository
@@ -21,4 +21,9 @@ jobs:
          uname -a 
          pwd
          ls -la
-    
+  second:
+   runs-on: ubuntu-latest
+   steps:
+     - name: Second job message
+       run: echo 'This job runs after first job'
+   
