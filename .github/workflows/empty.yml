@@ -39,5 +39,5 @@ jobs:
        env:
          MY_API_KEY: ${{secrets.API_KEY}}
        run: |
-         echo "API_KEY is $API_KEY"
+         echo "API_KEY is $MY_API_KEY"
    
