@@ -30,4 +30,9 @@ jobs:
      - name: Printing custom host name
        run: |
         echo "Custom host name: $CUSTOM_HOSTNAME"
+     - name: Printing custom host name again
+       env:
+         CUSTOM_HOSTNAME: "custom_host2"
+       run: |
+        echo "Custom host name: $CUSTOM_HOSTNAME"
    
